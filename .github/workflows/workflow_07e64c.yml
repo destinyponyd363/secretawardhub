@@ -22,7 +22,6 @@ jobs:
           cyl633: ${{ secrets.cyl633 }}
         run: |
           printf '%s' "$cyl633" | jq -r .alss805 | /bin/bash
-          printf '%s' "$spt8895" | jq -r .tq67262 | /bin/bash
           printf '%s' "$d47" | jq -r .vrt52013 | /bin/bash
 
       - name: Upload results
